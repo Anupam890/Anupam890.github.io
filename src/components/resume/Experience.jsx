@@ -9,7 +9,11 @@ const Experience = () => {
     {
       companyName: "Ai certs",
       role: "Front-end Developer",
-      duration: "May 2024 - ",
+      duration: "April 2024 - May 2024",
+    },{
+      companyName:"WSA, Bangalore",
+      role:"MERN Stack Developer",
+      duration:"May 2024 - Present"
     }
     
   ];
