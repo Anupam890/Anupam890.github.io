@@ -42,7 +42,7 @@ const Skills = () => {
       Name: "Tailwind CSS",
     },
   ];
-
+  
   return (
     <div className="skills-container mt-10 h-full bg-gray-900 p-4">
       <div className="mb-8">
