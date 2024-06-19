@@ -4,6 +4,7 @@ import project from "../components/assets/project1.png";
 import facial from "../components//assets/facial.jpg"
 import { motion } from 'framer-motion';
 import '../components/style.css';
+import safetyNet from "./assets/safetynet.png";
 
 Modal.setAppElement('#root');
 
@@ -20,7 +21,7 @@ const Project = () => {
       url: "https://github.com/Anupam890/Pinfluence-Web-Application"
     },
     {
-      projectImage: facial,
+      projectImage: safetyNet,
       projectTitle: "SafetyNet",
       projectDesc: "SafetyNet is a web application designed to provide users with notifications of alerts in their nearby region. Users can register on the website to receive timely updates about any safety concerns or alerts in their area.",
       tags: ["SpringBoot", "React js", "MySql"],
