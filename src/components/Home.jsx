@@ -42,18 +42,18 @@ const Home = () => {
           </p>
         </div>
         <div className="button mt-6 flex items-center space-x-4">
-          <motion.button
+          <motion.a
             className="bg-[#06D293] text-white py-2 px-4 rounded-lg hover:bg-[#04b07a] transition duration-300 flex items-center space-x-2"
             variants={buttonVariants}
             whileHover="hover"
+            href='https://docs.google.com/document/d/1Kt--Wws7x71DqBxAW2ia6Tu637VydS8r/edit?usp=sharing&ouid=110893940167025437253&rtpof=true&sd=true'
           >
             <HiDocumentText size={24} />
             <span>Resume</span>
-          </motion.button>
+          </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/anupam-mandal71/"
             target="_blank"
-            rel="noopener noreferrer"
             className="bg-[#06D293] text-white py-2 px-4 rounded-lg hover:bg-[#04b07a] transition duration-300 flex items-center space-x-2"
             variants={buttonVariants}
             whileHover="hover"
