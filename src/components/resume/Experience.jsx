@@ -9,13 +9,9 @@ const Experience = () => {
     {
       companyName: "Ai certs",
       role: "Front-end Developer",
-      duration: "x - 2022",
-    },
-    {
-      companyName: "Ai certs",
-      role: "Front-end Developer",
-      duration: "x - 2022",
-    },
+      duration: "May 2024 - ",
+    }
+    
   ];
 
   const slideCard = (direction) => {

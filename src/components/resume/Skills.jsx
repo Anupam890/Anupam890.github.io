@@ -14,9 +14,10 @@ const Skills = () => {
       Image: "https://img.icons8.com/color/48/000000/mysql-logo.png",
       Name: "MySQL",
     },
+    
     {
-      Image: "https://img.icons8.com/color/48/000000/firebase.png",
-      Name: "Firebase",
+      Image: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000",
+      Name: "Express js",
     },
   ];
 
@@ -42,16 +43,50 @@ const Skills = () => {
       Name: "Tailwind CSS",
     },
   ];
+
+  const Others = [
+    {
+      Image:"https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+      Name:"Git"
+    },
+    {
+      Image:"https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000",
+      Name:"Github"
+    },
+    {
+      Image:"https://cloud.tenable.com/mssp/logos/:logo_uuid/logo.png",
+      Name:"Postman"
+    },
+    {
+      Image:"https://img.icons8.com/?size=100&id=y7WGoWNuIWac&format=png&color=000000",
+      Name:"Vs Code"
+    }
+  ]
   
   return (
     <div className="skills-container mt-10 h-full bg-gray-900 p-4">
       <div className="mb-8">
+      <motion.h1
+        className="skills-title text-white text-3xl text-center mb-4 font-bold"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        Skills
+      </motion.h1>
+
+      <motion.div
+        className="bar text-center w-20 h-[1px] bg-primary mx-auto mb-4"
+        initial={{ width: 0 }}
+        animate={{ width: "80px" }}
+        transition={{ duration: 1 }}
+      />
         <h2 className="text-white text-xl font-semibold mb-4">Backend Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {backend.map((item, index) => (
             <motion.div
               key={index}
-              className="item flex items-center gap-2 border-2 border-white p-2 rounded-md"
+              className="item flex items-center gap-2 border-2 cursor-pointer border-white p-2 rounded-md"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -67,7 +102,23 @@ const Skills = () => {
           {frontend.map((item, index) => (
             <motion.div
               key={index}
-              className="item flex items-center gap-2 border-2 border-white p-2 rounded-md"
+              className="item flex items-center gap-2 cursor-pointer border-2 border-white p-2 rounded-md"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <img src={item.Image} className="w-10 h-10" alt={item.Name} />
+              <p className="text-white">{item.Name}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <h2 className="text-white text-xl font-semibold mb-4">Others</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {Others.map((item, index) => (
+            <motion.div
+              key={index}
+              className="item flex items-center gap-2 cursor-pointer border-2 border-white p-2 rounded-md"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

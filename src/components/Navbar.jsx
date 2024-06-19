@@ -66,7 +66,7 @@ const Navbar = () => {
           <a
             href="https://github.com/Anupam890"
             target="_blank"
-            className="px-5 py-3 bg-[#06D293] hover:bg-green-800 rounded-3xl"
+            className="px-8 py-3 bg-transparent border-2 border-[#06D293] hover:bg-primary  rounded-3xl"
           >
             Github Profile
           </a>
@@ -134,7 +134,7 @@ const Navbar = () => {
             <a
               href="https://github.com/Anupam890"
               target="_blank"
-              className="px-9 py-3 bg-[#06D293] hover:bg-green-800 rounded-3xl"
+              className="px-8 py-3 bg-transparent border-2 border-[#06D293] hover:bg-primary hover:font-bold rounded-3xl"
               onClick={handleToggle}
             >
               Github Profile
