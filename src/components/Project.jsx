@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import project from "../components/assets/project1.png";
+import facial from "../components//assets/facial.jpg"
 import { motion } from 'framer-motion';
 import '../components/style.css';
 
@@ -19,14 +20,14 @@ const Project = () => {
       url: "https://github.com/Anupam890/Pinfluence-Web-Application"
     },
     {
-      projectImage: "http://www.pngall.com/wp-content/uploads/5/Website-PNG-Image.png",
+      projectImage: facial,
       projectTitle: "SafetyNet",
       projectDesc: "SafetyNet is a web application designed to provide users with notifications of alerts in their nearby region. Users can register on the website to receive timely updates about any safety concerns or alerts in their area.",
       tags: ["SpringBoot", "React js", "MySql"],
       url: "https://github.com/Anupam890/SafetyNet/tree/main/SafetyNet"
     },
     {
-      projectImage: "http://www.pngall.com/wp-content/uploads/5/Website-PNG-Image.png",
+      projectImage: facial,
       projectTitle: "Facial Emotion Recognition",
       projectDesc: "A project that uses machine learning to recognize human emotions from facial expressions.",
       tags: ["Python", "OpenCV", "NumPy", "Pandas"],
