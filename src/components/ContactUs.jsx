@@ -48,7 +48,7 @@ const ContactUs = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Email Us 📩
+          Contact Us 📩
         </motion.h1>
         <motion.div
           className="bar text-center w-20 h-[1px] bg-primary mx-auto mb-8"

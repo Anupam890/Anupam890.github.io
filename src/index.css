@@ -20,9 +20,11 @@ body {
     width: 10px;
 }
 
+
+/* 
 ::-webkit-scrollbar-track {
     background: var(--primary-color);
-}
+} */
 
 ::-webkit-scrollbar-thumb {
     background: #01D293;

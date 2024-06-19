@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [Toggler, setToggler] = useState(false);
@@ -24,16 +24,41 @@ const Navbar = () => {
         <div className="hidden md:flex nav-links">
           <ul className="flex items-center justify-center gap-5 text-xl">
             <li>
-              <Link to="/">About</Link>
+              <NavLink
+                exact
+                to="/"
+                activeClassName="text-[#06D293]"
+                className="hover:text-[#06D293] transition-colors duration-300"
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <Link to="resume">Resume</Link>
+              <NavLink
+                to="/resume"
+                activeClassName="text-[#06D293]"
+                className="hover:text-[#06D293] transition-colors duration-300"
+              >
+                Resume
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <NavLink
+                to="/projects"
+                activeClassName="text-[#06D293]"
+                className="hover:text-[#06D293] transition-colors duration-300"
+              >
+                Projects
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <NavLink
+                to="/contact"
+                activeClassName="text-[#06D293]"
+                className="hover:text-[#06D293] transition-colors duration-300"
+              >
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -47,7 +72,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="md:hidden flex items-center">
-          <button onClick={handleToggle} className="text-2xl z-0">
+          <button onClick={handleToggle} className="text-2xl z-50">
             ☰
           </button>
         </div>
@@ -65,24 +90,45 @@ const Navbar = () => {
         </button>
         <ul className="flex flex-col items-center gap-5 text-xl py-20">
           <li>
-            <Link to="/" onClick={handleToggle}>
+            <NavLink
+              exact
+              to="/"
+              activeClassName="text-[#06D293]"
+              className="hover:text-[#06D293] transition-colors duration-300"
+              onClick={handleToggle}
+            >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/resume" onClick={handleToggle}>
+            <NavLink
+              to="/resume"
+              activeClassName="text-[#06D293]"
+              className="hover:text-[#06D293] transition-colors duration-300"
+              onClick={handleToggle}
+            >
               Resume
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/projects" onClick={handleToggle}>
+            <NavLink
+              to="/projects"
+              activeClassName="text-[#06D293]"
+              className="hover:text-[#06D293] transition-colors duration-300"
+              onClick={handleToggle}
+            >
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" onClick={handleToggle}>
+            <NavLink
+              to="/contact"
+              activeClassName="text-[#06D293]"
+              className="hover:text-[#06D293] transition-colors duration-300"
+              onClick={handleToggle}
+            >
               Contact Us
-            </Link>
+            </NavLink>
           </li>
           <li>
             <a
