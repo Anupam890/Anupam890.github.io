@@ -44,7 +44,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills-container mt-10 h-screen bg-gray-900 p-4">
+    <div className="skills-container mt-10 h-full bg-gray-900 p-4">
       <div className="mb-8">
         <h2 className="text-white text-xl font-semibold mb-4">Backend Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

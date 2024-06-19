@@ -72,7 +72,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="md:hidden flex items-center">
-          <button onClick={handleToggle} className="text-2xl z-50">
+          <button onClick={handleToggle} className="text-2xl z-0">
             ☰
           </button>
         </div>

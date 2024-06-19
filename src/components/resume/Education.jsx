@@ -43,7 +43,7 @@ const Education = () => {
   };
 
   return (
-    <div className="edu-container p-4 bg-gray-900 h-screen">
+    <div className="edu-container p-4  bg-gray-900 h-screen">
       <motion.h1
         className="skills-title text-white text-3xl text-center mb-4 font-bold"
         initial={{ opacity: 0 }}
