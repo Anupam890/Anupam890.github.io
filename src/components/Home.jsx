@@ -38,7 +38,7 @@ const Home = () => {
           <h2 className="text-4xl font-bold text-white">Anupam Mandal</h2>
           <p className="text-2xl text-white">Fullstack Developer</p>
           <p className="text-white mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, saepe. Nesciunt ab voluptas optio in tempore dicta doloremque libero. Cumque officia sed alias soluta omnis fuga inventore facilis animi labore.
+          I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning and a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
           </p>
         </div>
         <div className="button mt-6 flex items-center space-x-4">
