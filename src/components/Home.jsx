@@ -29,7 +29,7 @@ const buttonVariants = {
 
 const Home = () => {
   return (
-    <div className="hero-container w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center bg-gray-900 p-4">
+    <div className="hero-container w-full h-full flex flex-col-reverse md:flex-row items-center justify-center bg-gray-900 p-4">
       <div className="left-container w-full md:w-1/2 px-6 mb-8 md:mb-0 flex flex-col items-center md:items-start">
         <div className="intro mb-4 flex items-center space-x-2">
           <div className="line w-5 h-[2px] bg-primary"></div>

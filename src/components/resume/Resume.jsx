@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FaTools, FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 const linkVariants = {
   hidden: { opacity: 0, x: -20 },
@@ -14,7 +15,7 @@ const containerVariants = {
 const Resume = () => {
   return (
     <div className="resume-container w-full flex flex-col-reverse md:flex-row items-center justify-center gap-2 bg-gray-900 p-4">
-      <div className="left-container h-screen flex items-center">
+      <div className="left-container h-full ">
         <motion.div
           className="inner-box text-white"
           initial="hidden"
@@ -35,15 +36,39 @@ const Resume = () => {
             animate={{ width: "80px" }}
             transition={{ duration: 1 }}
           />
-          <ul className="text-white space-y-2 flex items-center justify-center flex-col">
-            <motion.li variants={linkVariants} className="text-[#06D293] hover:text-white text-2xl">
-              <Link to="skills">Skills</Link>
+          <ul className="text-white space-y-2 flex flex-row items-center justify-center gap-2 md:flex-col">
+            <motion.li
+              variants={linkVariants}
+              className="text-[#06D293] hover:text-2xl"
+            >
+              <Link to="skills">
+                <div className="flex items-center justify-center md:hidden w-10 h-10 rounded-full bg-[#06D293] text-black">
+                  <FaTools />
+                </div>
+                <span className="hidden md:inline">Skills</span>
+              </Link>
             </motion.li>
-            <motion.li variants={linkVariants} className="text-[#06D293] hover:text-white text-2xl">
-              <Link to="education">Education</Link>
+            <motion.li
+              variants={linkVariants}
+              className="text-[#06D293] hover:text-2xl"
+            >
+              <Link to="education">
+                <div className="flex items-center justify-center md:hidden w-10 h-10 rounded-full bg-[#06D293] text-black">
+                  <FaGraduationCap />
+                </div>
+                <span className="hidden md:inline">Education</span>
+              </Link>
             </motion.li>
-            <motion.li variants={linkVariants} className="text-[#06D293] hover:text-white text-2xl">
-              <Link to="experience">Experience</Link>
+            <motion.li
+              variants={linkVariants}
+              className="text-[#06D293] hover:text-2xl"
+            >
+              <Link to="experience">
+                <div className="flex items-center justify-center md:hidden w-10 h-10 rounded-full bg-[#06D293] text-black">
+                  <FaBriefcase />
+                </div>
+                <span className="hidden md:inline">Experience</span>
+              </Link>
             </motion.li>
           </ul>
         </motion.div>
