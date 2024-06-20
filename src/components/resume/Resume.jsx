@@ -13,8 +13,8 @@ const containerVariants = {
 
 const Resume = () => {
   return (
-    <div className="resume-container w-full flex flex-col-reverse md:flex-row items-center justify-center gap-2 bg-gray-900 p-4 ">
-      <div className="left-container h-screen flex items-center ">
+    <div className="resume-container w-full flex flex-col-reverse md:flex-row items-center justify-center gap-2 bg-gray-900 p-4">
+      <div className="left-container h-screen flex items-center">
         <motion.div
           className="inner-box text-white"
           initial="hidden"
@@ -48,7 +48,7 @@ const Resume = () => {
           </ul>
         </motion.div>
       </div>
-      <div className="right-container flex-2 p-4 w-full md:w-2/3 mt-4 md:mt-0 md:h-screen">
+      <div className="right-container flex-2 p-4 w-full mt-4 md:mt-0 md:h-screen">
         <Outlet />
       </div>
     </div>

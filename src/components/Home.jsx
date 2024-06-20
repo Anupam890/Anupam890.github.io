@@ -3,6 +3,7 @@ import image from "../components/assets/image.png";
 import { motion } from "framer-motion";
 import { HiDocumentText } from "react-icons/hi2";
 import { FaLinkedin } from "react-icons/fa";
+import resume from "../components/assets/Anupam_CSE_PKD_172.pdf"
 
 const strokeVariants = {
   animate: {
@@ -31,8 +32,8 @@ const Home = () => {
     <div className="hero-container w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center bg-gray-900 p-4">
       <div className="left-container w-full md:w-1/2 px-6 mb-8 md:mb-0 flex flex-col items-center md:items-start">
         <div className="intro mb-4 flex items-center space-x-2">
-          <div className="line w-2 h-[1px] bg-primary"></div>
-          <p className="text-[#06D293]">Hello 👋</p>
+          <div className="line w-5 h-[2px] bg-primary"></div>
+          <p className="text-[#06D293] text-xl">Hello 👋</p>
         </div>
         <div className="name mb-6 text-center md:text-left">
           <h2 className="text-4xl font-bold text-white">Anupam Mandal</h2>
@@ -46,7 +47,8 @@ const Home = () => {
             className="bg-[#06D293] text-white py-2 px-4 rounded-lg hover:bg-[#04b07a] transition duration-300 flex items-center space-x-2"
             variants={buttonVariants}
             whileHover="hover"
-            href='https://docs.google.com/document/d/1Kt--Wws7x71DqBxAW2ia6Tu637VydS8r/edit?usp=sharing&ouid=110893940167025437253&rtpof=true&sd=true'
+            href={resume}
+            target='_blank'
           >
             <HiDocumentText size={24} />
             <span>Resume</span>

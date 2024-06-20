@@ -28,7 +28,7 @@ const App = () => {
           <Route path="projects" element={<Project />} />
           <Route path="contact" element={<ContactUs />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </Fragment>
   );
