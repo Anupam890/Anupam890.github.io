@@ -30,7 +30,7 @@ const buttonVariants = {
 
 const Home = () => {
   return (
-    <div className="hero-container min-h-screen w-full flex flex-col-reverse md:flex-row items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 px-6 py-12">
+    <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 px-6 py-12">
       
       {/* Left Section */}
       <div className="left-container w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
