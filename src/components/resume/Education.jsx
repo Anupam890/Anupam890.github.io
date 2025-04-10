@@ -11,7 +11,7 @@ const Education = () => {
       degree: "Bachelor of Technology",
       branch: "Computer Science and Engineering",
       Image:
-        "https://cutm.ac.in/wp-content/uploads/Centurion_University_of_Technology_and_Management_Logo.webp",
+        "https://scopes24.cutm.ac.in/assets/CUTM_main.jpg",
       grade: "8.7 CGPA",
       year: "2021 - 2025",
     },
@@ -20,7 +20,7 @@ const Education = () => {
       degree: "Intermediate",
       branch: "Science",
       Image:
-        "https://srichaitanyacolleges.com/neet-repeater/images/srichaitanyalogo.webp",
+        "https://play-lh.googleusercontent.com/hrbZxpBovIdzhkhwdDN-c1vu3qEAYFZHoCiL-lSgZzGeqOMODgvaJWH1ysnrPlgPtmo",
       grade: "8.03 CGPA",
       year: "2019 - 2021",
     },

@@ -7,13 +7,9 @@ const Experience = () => {
 
   const experienceData = [
     {
-      companyName: "Ai certs",
-      role: "Front-end Developer",
-      duration: "April 2024 - May 2024",
-    },{
-      companyName:"WSA, Bangalore",
-      role:"MERN Stack Developer",
-      duration:"May 2024 - Present"
+      companyName:"WebStack Academy, Bangalore",
+      role:"Full-Stack Developer",
+      duration:"june 2024 - Sept 2024"
     }
     
   ];
